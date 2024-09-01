@@ -1,0 +1,24 @@
+{
+    "manifest_version": 3,
+    "name": "Alert ni Ej",
+    "version": "1.0",
+    "description": "An extension that alerts to eat well.",
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {
+      "default_popup": "popup.html",
+      "default_title": "Set an alarm"
+    },
+    "permissions": ["tabs", "alarms", "storage"],
+    "web_accessible_resources": [
+      {
+        "resources": ["newtab.html", "output.css"],
+        "matches": ["<all_urls>"]
+      }
+    ],
+    "icons": {
+      "48": "images/icon.png"
+    }
+  }
+  
