@@ -9,14 +9,22 @@
 <body class="bg-gray-100 p-4">
     <div class="max-w-lg mx-auto">
         <h1 class="text-lg font-bold text-center mb-4">Set Alarm</h1>
-
         <input id="message-input" type="text" class="w-full p-2 border rounded mb-4" placeholder="Enter message here">
-
         <input id="time-input" type="time" class="w-full p-2 border rounded mb-4">
+
+        <select id="sound-input" class="w-full p-2
+        border rounded mb-4">
+            <option value="audio1.mp3">Alarm 1
+                <a href="#" id="play-">Download</a>
+            </option>
+            <option value="audio2.mp3">Alarm 2</option>
+        </select>
+
         <button id="set-time-btn" class="w-full bg-blue-500 text-white p-2 rounded">Set Time</button>
         <div class="mt-8" >
             <p id="set-time-display" class="text-center mt-8"></p>
         </div>
+
     </div>
 
     <script src="popup.js"></script>

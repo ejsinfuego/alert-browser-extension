@@ -26,6 +26,12 @@ document.getElementById('set-time-btn').addEventListener('click', () => {
     }
 });
 
+//let's save the selected sound to local storage
+document.getElementById('sound-input').addEventListener('change', () => {
+    const sound = document.getElementById('sound-input').value;
+    localStorage.setItem('alarmSound', sound);
+});
+
 window.addEventListener('load', () => {
     const savedTime = localStorage.getItem('alarmTime');
     //set width of the body
